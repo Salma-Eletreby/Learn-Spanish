@@ -1,0 +1,235 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  background-color: rgb(253, 255, 210);
+}
+.headline {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-area {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  height: 10em;
+}
+
+#sec1 {
+  width: 75%;
+  height: 100%;
+}
+
+#sec2 {
+  width: 100%;
+  height: 100%;
+}
+
+#sec3 {
+  width: 75%;
+  height: 100%;
+}
+
+.polaroid {
+  position: relative;
+  width: 200px;
+  padding: 20px 20px 40px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transform: rotate(-5deg);
+}
+
+.polaroid img {
+  width: 100%;
+}
+
+.polaroid::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#plane{
+  position: absolute;
+  left: 18rem; 
+  top: 15rem;
+}
+
+#img1{
+  top: 2.5rem;
+  left: 1rem;
+}
+
+#pin1{
+  position: absolute;
+  top: 1.4rem;
+  left: 8rem;
+  height: 5%;
+}
+
+#img2{
+  top: 30rem;
+  left: 12rem;
+}
+
+#pin2{
+  position: absolute;
+  top: 41.5rem;
+  left: 19rem;
+  height: 5%;
+}
+
+#bag1{
+  position: absolute;
+  height: 25%;
+  top: 25rem;
+  left: 1rem;
+}
+
+#map1{
+  position: absolute;
+  top: 2.5rem;
+  left: 95rem;
+  height: 25%;
+}
+
+#img3{
+  position: absolute;
+  top: 25rem;
+  left: 90rem;
+}
+
+#pin3{
+  position: absolute;
+  top: 22.5rem;
+  left: 96.5rem;
+  height: 5%;
+}
+
+#bus{
+  position: absolute;
+  top: 45rem;
+  left: 95rem;
+  height: 25%;
+}
+
+#title1{
+  font-size: 3rem;
+}
+
+#subtitle1{
+  font-size: 2rem;
+}
+
+#title-card{
+  position: absolute;
+  height: 70rem;
+  left: 20rem;
+  transform: scaleY(-1) translateY(100px);
+}
+
+button,
+button:focus {
+  font-size: 17px;
+  padding: 10px 25px;
+  border-radius: 0.7rem;
+  background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+  border: 2px solid rgb(50, 50, 50);
+  border-bottom: 5px solid rgb(50, 50, 50);
+  box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);
+  transform: translate(0, -3px);
+  cursor: pointer;
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+
+button:active {
+  transform: translate(0, 0);
+  border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+#title-area{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 20rem;
+  left: 30rem;
+}
+
+.table-wrap{
+  display:block;
+  overflow-y:auto
+}
+
+table img{
+  height:10rem;
+  width:13rem;
+  margin: 0.5rem;
+}
+
+table{
+  font-size: 2rem;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid #667BC6;
+}
+
+table th{
+  background-color: #FFB4C2;
+}
+
+.MCQ{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem;
+}
+
+.draggable-label {
+  background-color: #FFB4C2;
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 3rem;
+}
+
+.labels-to-sort,.sorted-labels {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sorted-labels{
+  justify-content: center;
+}
+
+.label-dropzone {
+  background-color: #DA7297;
+  width: 4rem;
+  padding: 3rem;
+  font-size: 3rem;
+  margin: 0.5rem;
+}
+
+.sort-area{
+  border: 0.2rem solid rgb(102, 123, 198);
+  margin: 0.5rem;
+}
