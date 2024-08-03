@@ -23,14 +23,27 @@ window.onDragOver = function(event) {
     event.preventDefault();
 };
 
-
 window.onDrop = function(event) {
+    event.preventDefault();
     const id = event.dataTransfer.getData('text');
     const draggableElement = document.getElementById(id);
-    const dropzone = event.target;
-    dropzone.appendChild(draggableElement);
+    let dropzone = event.target;
+
+    // Ensure the dropzone is correctly identified
+    if (!dropzone.classList.contains('label-dropzone')) {
+        dropzone = dropzone.closest('.label-dropzone');
+    }
+
+    // Check if the dropzone already has a child element
+    if (dropzone && dropzone.children.length === 0) {
+        dropzone.appendChild(draggableElement);
+    } else {
+        alert("This drop zone can only have one label.");
+        draggableElement.style.backgroundColor = '#FFB4C2';
+    }
+
     event.dataTransfer.clearData();
-}
+};
 
 function render(data) {
     var cardHTML = ``
@@ -78,10 +91,15 @@ function render(data) {
         }
 
         if(data[state.lvlIndex].type=="vocab"){
+            globalThis.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
+            document.getElementById("sec1").style.width="0%"
+            document.getElementById("sec3").style.width="0%"
             let vocabHtml = `
             <div class="vocab${state.lvlIndex}" style="display:flex; flex-direction:column; align-items:center;">
                 <h1 style="text-align:center;font-size:3rem;margin:1rem;">${data[state.lvlIndex].title}</h1>
                 <p style="font-size:2rem;margin:0.5rem;">${data[state.lvlIndex].desc}</p>
+                <p>You can slow down the pronouncation by using ︙-> playback speed</p>
                 <div class="table-wrap">
                     <table>
                         <tr>
@@ -112,6 +130,8 @@ function render(data) {
         `
             document.getElementById("data").innerHTML = vocabHtml
         }else if(data[state.lvlIndex].type=="MCQ"){
+            globalThis.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
             let subHTML = data[state.lvlIndex].elements.map((e, x) =>
                 `
                 <div id="MCQ${x}" class="MCQ">
@@ -142,7 +162,15 @@ function render(data) {
             `
             document.getElementById("data").innerHTML = questionHTML
             state.checkAnswer = true
+
+            document.getElementById("sec1").style.width="75%"
+            document.getElementById("sec3").style.width="75%"
         }else if(data[state.lvlIndex].type=="sort"){
+            globalThis.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
+            document.getElementById("sec1").style.width="0%"
+            document.getElementById("sec3").style.width="0%"
+
             var wordsHTML =``
             var areaHTML = ``
             var allQuestionsHTML = ``
@@ -193,25 +221,57 @@ function render(data) {
 }
 
 function checkAnswer(data){
+    globalThis.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
     if(data[state.lvlIndex].type=="MCQ"){
         var questions = document.getElementsByClassName("MCQ")
+        var unanswered = false
+        var unansweredMCQ = []
         Array.from(questions).forEach((q,i) =>{
-            var answer = document.querySelector(`input[name="choice${i}"][value="${data[state.lvlIndex].elements[i].answer}"]`);
-            var label = document.querySelector(`label[for="${answer.id}"]`);
-            label.style.backgroundColor = "lightgreen"
-
             let selectedChoice = document.querySelector(`input[name="choice${i}"]:checked`);
 
-            if(selectedChoice!= null && answer.id!=selectedChoice.id){
-                var wrongLabel =document.querySelector(`label[for="${selectedChoice.id}"]`);
-                wrongLabel.style.backgroundColor = "lightsalmon"
-            }else if(selectedChoice ==null){
-    
-            } 
-            else{
-                state.score = state.score+100
+            if(selectedChoice == null){
+                unanswered = true
+                unansweredMCQ.push(i)
+            } else{
+                document.getElementById(`MCQ${i}`).style.border = "none"
             }
         })
+        
+        if(unanswered == true){
+            alert("Please make sure that all the questions have been answered.");
+            unansweredMCQ.forEach(q => {
+                document.getElementById(`MCQ${q}`).style.border = "0.1rem solid red"
+            })
+        } else{
+            Array.from(questions).forEach((q,i) =>{
+                document.getElementById(`MCQ${i}`).style.border = "none"
+                var answer = document.querySelector(`input[name="choice${i}"][value="${data[state.lvlIndex].elements[i].answer}"]`);
+                var label = document.querySelector(`label[for="${answer.id}"]`);
+                label.style.backgroundColor = "lightgreen"
+    
+                let selectedChoice = document.querySelector(`input[name="choice${i}"]:checked`);
+    
+                if(selectedChoice!= null && answer.id!=selectedChoice.id){
+                    var wrongLabel =document.querySelector(`label[for="${selectedChoice.id}"]`);
+                    wrongLabel.style.backgroundColor = "lightsalmon"
+                }else if(selectedChoice ==null){
+        
+                } 
+                else{
+                    state.score = state.score+100
+                }
+            })
+
+            state = {
+                cardIndex: state.cardIndex,
+                lvlIndex: state.lvlIndex,
+                checkAnswer: false,
+                score: state.score,
+                name: state.name
+            }
+        }
+        
     } else if(data[state.lvlIndex].type=="sort"){
         var questions = document.getElementsByClassName("sort-area")
         Array.from(questions).forEach((q,x) =>{
@@ -232,15 +292,15 @@ function checkAnswer(data){
             document.getElementById(`sentence-${x}`).innerHTML =`<h4>Answer: ${sentence}</h4>`
             document.getElementById(`sentence-${x}`).style.textAlign = "center";
             document.getElementById(`sentence-${x}`).style.fontSize = "2rem";
-        })
-    }
 
-    state = {
-        cardIndex: state.cardIndex,
-        lvlIndex: state.lvlIndex,
-        checkAnswer: false,
-        score: state.score,
-        name: state.name
+            state = {
+                cardIndex: state.cardIndex,
+                lvlIndex: state.lvlIndex,
+                checkAnswer: false,
+                score: state.score,
+                name: state.name
+            }
+        })
     }
 }
 
@@ -263,12 +323,14 @@ fetch("/api/spanishTrip")
                 },
                 body: JSON.stringify(user)
             })
+            document.getElementById("sec1").style.width="75%"
+            document.getElementById("sec3").style.width="75%"
+            
             var endHTML = `
             <svg id="title-card" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <path fill="#FFFFFF" d="M35.2,-64C46.2,-54.6,56.1,-46.4,65.8,-35.9C75.4,-25.4,84.7,-12.7,87.9,1.9C91.2,16.5,88.5,33,77.1,40.4C65.7,47.7,45.5,45.8,31.2,43.5C16.9,41.2,8.4,38.5,-1.5,41.1C-11.5,43.8,-23,51.7,-33.7,52C-44.4,52.2,-54.4,44.6,-64.7,34.7C-75.1,24.8,-85.8,12.4,-86.1,-0.1C-86.3,-12.7,-76,-25.3,-65.1,-34.3C-54.2,-43.2,-42.6,-48.5,-31.7,-58C-20.7,-67.4,-10.4,-81,0.9,-82.5C12.1,-84,24.2,-73.4,35.2,-64Z" transform="translate(100 100)" />
               <div id="title-area">
-                <h1 id="title1">Congratulations! You have reached the end</h1>
-                <h3 id="subtitle1">Please inform the supervisor</h3>
+                <h1 id="title1">- End -</h1>
               </div>
             </svg>
             `
@@ -306,16 +368,25 @@ fetch("/api/spanishTrip")
         } else if(state.lvlIndex== -1){
             var userName = document.getElementById("name").value
             var userAge = document.getElementById("age").value
-            setState(
-                { 
-                    cardIndex: 0,
-                    lvlIndex: ++state.lvlIndex,
-                    checkAnswer: false,
-                    score: state.score,
-                    name: userName,
-                    age: userAge
-                },
-                data)
+            
+            if(userName==""){                
+                document.getElementById("name").style.border="0.2rem solid red"
+            }
+            if(userAge == ""){
+                document.getElementById("age").style.border="0.2rem solid red"
+            }
+            if(userName != "" && userAge != ""){
+                setState(
+                    { 
+                        cardIndex: 0,
+                        lvlIndex: ++state.lvlIndex,
+                        checkAnswer: false,
+                        score: state.score,
+                        name: userName,
+                        age: userAge
+                    },
+                    data)
+            }
         }
     }
     

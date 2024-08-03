@@ -75,7 +75,7 @@
             },{
                 "id": 5,
                 "spanish": "El Viaje",
-                "english": "Journey",
+                "english": "Trip",
                 "arabic": "رحلة",
                 "img": "https://img.freepik.com/free-psd/travel-adventure-invitation-template_23-2150861165.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
                 "audio": "https://www.dropbox.com/scl/fi/usrezaz8693w3rl1m0syf/journey.mp3?rlkey=t6a7a5o2pcbesx4kj6t0z3qqi&st=xl21pr04&dl=1"
@@ -83,37 +83,6 @@
         ]
     },{
         "id":3,
-        "title":"Level 1 - End of Level",
-        "desc": "Choose the correct word that describes the image",
-        "type": "MCQ",
-        "elements":[
-            {
-                "id": 1,
-                "img": "https://img.freepik.com/free-vector/foreign-passport-two-airplane-tickets_80328-204.jpg?t=st=1721672531~exp=1721676131~hmac=d63f39636c369ee8cc4fba9e6d423b79a95dee4c3dc96675f36fbdf19cfb89ba&w=740",
-                "choices": ["El Boleto","La Azafata","El Pasaporte"],
-                "answer": "El Boleto"
-            },
-            {
-                "id": 2,
-                "img": "https://img.freepik.com/free-photo/place-flying-sunset-sky_1112-1132.jpg?t=st=1721672447~exp=1721676047~hmac=f45688bcb8cfd299cca1ddaa832b63db9bdfacea5420120a88d204923a2c0497&w=900",
-                "choices": ["El Pilote","El Ferry","El Avión"],
-                "answer": "El Avión"
-            },
-            {
-                "id": 3,
-                "img": "https://img.freepik.com/free-psd/realistic-isolated-blue-backpack-transparent-background_125540-3532.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "choices": ["La Pastal","La Mochila","La Piscina"],
-                "answer": "La Mochila"
-            },
-            {
-                "id": 4,
-                "img": "https://img.freepik.com/premium-psd/transparent-background-with-isolated-orange-plastic-suitcase_176841-75050.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "choices": ["La Maleta","El Barco","El mapa"],
-                "answer": "La Maleta"
-            }
-        ]
-    },{
-        "id":4,
         "title":"Travel Essentials",
         "desc": "You need to know these items when travelling to spain",
         "type": "vocab",
@@ -165,7 +134,7 @@
             }
         ]
     },{
-        "id":5,
+        "id":4,
         "title":"Travel Essentials",
         "desc": "You need to know these items when travelling to spain",
         "type": "vocab",
@@ -205,7 +174,7 @@
             }
         ]
     },{
-        "id":6,
+        "id":5,
         "title":"Level 2 - End of Level",
         "desc": "Choose the correct word that describes the image",
         "type": "MCQ",
@@ -213,13 +182,13 @@
             {
                 "id": 1,
                 "img": "https://img.freepik.com/free-vector/umbrella-protection-icon-vector-isolated_24911-109216.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "choices": ["Paraguas","Gafas de sol","Gafas de sol"],
+                "choices": ["Paraguas","Gafas de sol","Recuerdo"],
                 "answer": "Paraguas"
             },
             {
                 "id": 2,
                 "img": "https://img.freepik.com/free-photo/store-famous-marrakesh-souk_268835-3995.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "choices": ["Recuerdo","El viaje","El viaje"],
+                "choices": ["Recuerdo","El viaje","Moneda"],
                 "answer": "Recuerdo"
             },
             {
@@ -239,10 +208,35 @@
                 "img": "https://img.freepik.com/free-photo/vanity-case-products-assortment_23-2149879911.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
                 "choices": ["Recuerdo","El viaje","Artículos de tocador"],
                 "answer": "Artículos de tocador"
+            }, {
+                "id": 6,
+                "img": "https://img.freepik.com/free-photo/place-flying-sunset-sky_1112-1132.jpg?t=st=1721672447~exp=1721676047~hmac=f45688bcb8cfd299cca1ddaa832b63db9bdfacea5420120a88d204923a2c0497&w=900",
+                "choices": ["El aeropuerto","El viaje","El Avión"],
+                "answer": "El Avión"
+            },{
+                "id": 7,
+                "img": "https://img.freepik.com/premium-psd/transparent-background-with-isolated-orange-plastic-suitcase_176841-75050.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+                "choices": ["La Maleta","El puente","La mochila"],
+                "answer": "La Maleta"
+            },{
+                "id": 8,
+                "img": "https://img.freepik.com/free-vector/foreign-passport-two-airplane-tickets_80328-204.jpg?t=st=1721672531~exp=1721676131~hmac=d63f39636c369ee8cc4fba9e6d423b79a95dee4c3dc96675f36fbdf19cfb89ba&w=740",
+                "choices": ["El Boleto","El puente","El viaje"],
+                "answer": "El Boleto"
+            },{
+                "id": 9,
+                "img": "https://img.freepik.com/free-psd/travel-adventure-invitation-template_23-2150861165.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+                "choices": ["La mochila","La playa","El viaje"],
+                "answer": "El viaje"
+            },{
+                "id": 10,
+                "img": "https://img.freepik.com/free-psd/realistic-isolated-blue-backpack-transparent-background_125540-3532.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+                "choices": ["El equipaje","La Mochila","La maleta"],
+                "answer": "La Mochila"
             }
         ]
     },{
-        "id":7,
+        "id":6,
         "title":"Directions",
         "desc": "note that we use “¡” at the beginning of Spanish sentences to show excitement and “¿” at the beginning of questions.",
         "type": "vocab",
@@ -253,7 +247,7 @@
                 "english": "Where is...?",
                 "arabic": "أين هو",
                 "img": "https://img.freepik.com/premium-vector/boy-is-thinking-about-direction-work_118167-6396.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_user",
-                "audio": "https://www.dropbox.com/scl/fi/dn4gdn8pcj5si081pfpxp/D-nde-est.mp3?rlkey=qfkahvgzdcr5afhpmmn3w3kxj&st=uvad6i0g&dl=0"
+                "audio": "https://www.dropbox.com/scl/fi/dn4gdn8pcj5si081pfpxp/D-nde-est.mp3?rlkey=qfkahvgzdcr5afhpmmn3w3kxj&st=uvad6i0g&dl=1"
             },{
                 "id": 2,
                 "spanish": "¿Cómo llego a...?",
@@ -267,11 +261,11 @@
                 "english": "How much is a taxi to...?",
                 "arabic": "كم ثمن التاكسي إلى...؟",
                 "img": "https://img.freepik.com/free-photo/smiley-man-city-holding-mobile_23-2148296633.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_user",
-                "audio": "https://www.dropbox.com/scl/fi/dxl3ivb5ckg8pd3ydjkcw/Cu-nto-cuesta-un-taxi-a.mp3?rlkey=95fyhv05vlcqn1snucvck4muc&st=xqhjcvet&dl=0"
+                "audio": "https://www.dropbox.com/scl/fi/dxl3ivb5ckg8pd3ydjkcw/Cu-nto-cuesta-un-taxi-a.mp3?rlkey=95fyhv05vlcqn1snucvck4muc&st=xqhjcvet&dl=1"
             }
         ]
     },{
-        "id":8,
+        "id":7,
         "title":"Using Directions",
         "desc": "Now you know how to ask lets how to actually use them",
         "type": "vocab",
@@ -314,7 +308,7 @@
             }
         ]
     },{
-        "id":9,
+        "id":8,
         "title":"Level 3 - End of Level",
         "desc": "sort the colored words in each of the following sentences to form a correct sentence.",
         "type": "sort",
