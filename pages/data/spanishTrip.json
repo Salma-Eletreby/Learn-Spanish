@@ -1,179 +1,5 @@
 [
-    {
-        "id":1,
-        "title":"Travel Time!",
-        "desc": "Many roots for words are shared between English and Spanish",
-        "type": "vocab",
-        "elements":[
-            {
-                "id": 1,
-                "spanish": "El Hotel",
-                "english": "Hotel",
-                "arabic": "الفندق",
-                "img": "https://img.freepik.com/free-photo/aerial-shot-aria-hotel-las-vegas_181624-42881.jpg?t=st=1721671791~exp=1721675391~hmac=4a0fd7bb4eb7d3176c67dbf5e26756ee16583a05ff57c245bd9b78db2f763bee&w=740",
-                "audio": "https://www.dropbox.com/scl/fi/r1uikmzq5ydeoa9vjd7vl/hotel.mp3?rlkey=vpokbvlur51lvm0icyy09wahx&st=x6kbdqaz&dl=1"
-            },{
-                "id": 2,
-                "spanish": "El Autobús",
-                "english": "Bus",
-                "arabic": "حافلة",
-                "img": "https://img.freepik.com/free-photo/traffic-vehicle-urban-reflections-city_1112-973.jpg?t=st=1721671816~exp=1721675416~hmac=aedb025d7f10276b6fb4d9533ab924a36c48ddd57624100fac9369be2a2d8d29&w=826",
-                "audio": "https://www.dropbox.com/scl/fi/7clcucmqo84ejzm5oude2/bus.mp3?rlkey=jq9mqt46vz18imx0li3zx2t2d&st=8mlz5068&dl=1"
-            },{
-                "id": 3,
-                "spanish": "El Taxi",
-                "english": "Taxi",
-                "arabic": "سيارة اجره",
-                "img": "https://img.freepik.com/premium-psd/isolated-realistic-shiny-metalic-orange-luxury-city-taxi-cab-car-from-right-front-view_16145-9739.jpg?w=900",
-                "audio": "https://www.dropbox.com/scl/fi/2kuctp1q8nerely0domk0/taxi.mp3?rlkey=w7yh5fxiq3fc6ywqrea54lxrw&st=wotye265&dl=1"
-            },
-            {
-                "id": 4,
-                "spanish": "El Aeropuerto",
-                "english": "Airport",
-                "arabic": "مطار",
-                "img": "https://img.freepik.com/free-photo/airport-terminal_1417-1461.jpg?t=st=1721671873~exp=1721675473~hmac=85d718bd712b1d3c5f1096236fc982417fe3ffd82d44a8f0eb468d060fe7fb6c&w=826",
-                "audio": "https://www.dropbox.com/scl/fi/tmzqskrvrlybyx8alhlnr/airport.mp3?rlkey=74kpx77x8v9rsdbwnaub2w4y8&st=g8m5vl1e&dl=1"
-            }
-        ]
-    },
-    {
-        "id":2,
-        "title":"Travel Time!",
-        "desc": "Not all words are the same in English and Spanish",
-        "type": "vocab",
-        "elements":[
-            {
-                "id": 1,
-                "spanish": "El Avión",
-                "english": "Airplane",
-                "arabic": "طائرة",
-                "img": "https://img.freepik.com/free-photo/place-flying-sunset-sky_1112-1132.jpg?t=st=1721672447~exp=1721676047~hmac=f45688bcb8cfd299cca1ddaa832b63db9bdfacea5420120a88d204923a2c0497&w=900",
-                "audio": "https://www.dropbox.com/scl/fi/5ke27zb4l85odqlmk7t5n/airplane.mp3?rlkey=r3gs2kxt4v7r8y38wtou926v7&st=z8scd78f&dl=1"
-            },{
-                "id": 2,
-                "spanish": "El Boleto",
-                "english": "Ticket",
-                "arabic": "تذكرة",
-                "img": "https://img.freepik.com/free-vector/foreign-passport-two-airplane-tickets_80328-204.jpg?t=st=1721672531~exp=1721676131~hmac=d63f39636c369ee8cc4fba9e6d423b79a95dee4c3dc96675f36fbdf19cfb89ba&w=740",
-                "audio": "https://www.dropbox.com/scl/fi/n494c3std6fovfbube42j/ticket.mp3?rlkey=sosto50fef2i9dz6qpqf0jfxd&st=bd81pcyg&dl=1"
-            },{
-                "id": 3,
-                "spanish": "La Maleta",
-                "english": "Suitcase",
-                "arabic": "حقيبة سفر",
-                "img": "https://img.freepik.com/premium-psd/transparent-background-with-isolated-orange-plastic-suitcase_176841-75050.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "audio": "https://www.dropbox.com/scl/fi/gu0dhajnu2imfzc8jhlqf/suitcase.mp3?rlkey=d4l9au5yjtbxm0aln18rnb5m3&st=mkl9q24v&dl=1"
-            },
-            {
-                "id": 4,
-                "spanish": "La Mochila",
-                "english": "Backpack",
-                "arabic": "حقيبة ظهر",
-                "img": "https://img.freepik.com/free-psd/realistic-isolated-blue-backpack-transparent-background_125540-3532.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "audio": "https://www.dropbox.com/scl/fi/chuc8liinnb4aibd4yps0/backpack.mp3?rlkey=pzahjlr95c9wt00zqjn5pabqs&st=0srpbb5w&dl=1"
-            },{
-                "id": 5,
-                "spanish": "El Viaje",
-                "english": "Trip",
-                "arabic": "رحلة",
-                "img": "https://img.freepik.com/free-psd/travel-adventure-invitation-template_23-2150861165.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "audio": "https://www.dropbox.com/scl/fi/usrezaz8693w3rl1m0syf/journey.mp3?rlkey=t6a7a5o2pcbesx4kj6t0z3qqi&st=xl21pr04&dl=1"
-            }
-        ]
-    },{
-        "id":3,
-        "title":"Travel Essentials",
-        "desc": "You need to know these items when travelling to spain",
-        "type": "vocab",
-        "elements":[
-            {
-                "id": 1,
-                "spanish": "El Mapa",
-                "english": "Map",
-                "arabic": "خريطة",
-                "img": "https://img.freepik.com/free-vector/city-map-with-label-home-pin_1284-42340.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "audio": "https://www.dropbox.com/scl/fi/89909lay8y3hhetdyiknd/map.mp3?rlkey=541llc5uy6qixfz1gtslanb4i&st=8egikhr2&dl=1"
-            },{
-                "id": 2,
-                "spanish": "El Puente",
-                "english": "Bridge",
-                "arabic": "كوبري",
-                "img": "https://img.freepik.com/free-photo/oresund-bridge-located-malmo-sweden-calm-blue-water-daylight_181624-48536.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "audio": "https://www.dropbox.com/scl/fi/pytpsgvrlhqj67k4ei8za/bridge.mp3?rlkey=iy2yytm3rkun0zo7fuce7h1vf&st=0gxqe34j&dl=1"
-            },{
-                "id": 3,
-                "spanish": "El Destino",
-                "english": "Destination",
-                "arabic": "وجهة",
-                "img": "https://img.freepik.com/premium-vector/location-travel-road-white-background-vector-illustration_547150-344.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "audio": "https://www.dropbox.com/scl/fi/rd2sqp04v0kau338ylv1b/destination.mp3?rlkey=n8ktxw85aqdo5bdvnomo10t2h&st=u68x1vyd&dl=1"
-            },
-            {
-                "id": 4,
-                "spanish": "El Equipaje",
-                "english": "Luggage",
-                "arabic": "أمتعة السفر",
-                "img": "https://img.freepik.com/free-vector/luggage-colored-composition-with-plastic-suitcases-wheels-travel-bags-clutch-flat-illustration_1284-65501.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "audio": "https://www.dropbox.com/scl/fi/owl4gvds8gy4smbk9hvqo/luggage.mp3?rlkey=b6rcx1o53ul9zcv2ghtae7lmr&st=50t8e0fs&dl=1"
-            },
-            {
-                "id": 5,
-                "spanish": "Moneda",
-                "english": "Currency",
-                "arabic": "عملة",
-                "img": "https://img.freepik.com/free-photo/business-financial-concept-stack-money-background-flat-lay_176474-6549.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "audio": "https://www.dropbox.com/scl/fi/70rkydkyxlbo0gopug3vx/currency.mp3?rlkey=taazc6984kk4wo0wzgteom9b2&st=c92p53mv&dl=1"
-            },{
-                "id": 6,
-                "spanish": "La Playa",
-                "english": "Beach",
-                "arabic": "شاطئ",
-                "img": "https://img.freepik.com/free-photo/beautiful-tropical-beach-sea-with-chair-blue-sky_74190-7488.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "audio": "https://www.dropbox.com/scl/fi/3vg0qf78tbatl65tr0x6b/Beach.mp3?rlkey=ki89mokt2lzq21tptvkznk755&st=3lfrry5j&dl=1"
-            }
-        ]
-    },{
-        "id":4,
-        "title":"Travel Essentials",
-        "desc": "You need to know these items when travelling to spain",
-        "type": "vocab",
-        "elements":[
-            {
-                "id": 1,
-                "spanish": "Recuerdo",
-                "english": "Souvenir",
-                "img": "https://img.freepik.com/free-photo/store-famous-marrakesh-souk_268835-3995.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "audio": "https://www.dropbox.com/scl/fi/u90v42bn2jilj08hg29yp/Souvenir.mp3?rlkey=wu4ekz5uk0bgocncfaiyq9acj&st=xvfq9fk5&dl=1"
-            },{
-                "id": 2,
-                "spanish": "Itinerario",
-                "english": "Itinerary",
-                "img": "https://img.freepik.com/free-vector/gradient-travel-itinerary-template-design_23-2149650580.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "audio": "https://www.dropbox.com/scl/fi/umtka2whbl0fd6beb5tlm/Itenary.mp3?rlkey=o7voj4pvyaapg1rsoxk7qnf52&st=3uvzeb10&dl=1"
-            },{
-                "id": 3,
-                "spanish": "Artículos de tocador",
-                "english": "Toiletries",
-                "img": "https://img.freepik.com/free-photo/vanity-case-products-assortment_23-2149879911.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "audio": "https://www.dropbox.com/scl/fi/2qktuwcycr015ndhduofa/toiletries.mp3?rlkey=75n0cb31m3kxuvtd5zhzm016s&st=lu1pk7ie&dl=1"
-            },
-            {
-                "id": 4,
-                "spanish": "Paraguas",
-                "english": "Umbrella",
-                "img": "https://img.freepik.com/free-vector/umbrella-protection-icon-vector-isolated_24911-109216.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "audio": "https://www.dropbox.com/scl/fi/6gcqvnwzdbt3b24a1wvw3/Umbrella.mp3?rlkey=nrytt8ijm6jg0cfihr2ofpud7&st=t9zpoh1v&dl=1"
-            },
-            {
-                "id": 5,
-                "spanish": "Gafas de sol",
-                "english": "Sunglasses",
-                "img": "https://img.freepik.com/free-photo/glasses-with-slightly-rounded-frame_23-2150670762.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "audio": "https://www.dropbox.com/scl/fi/1j6jmy74xpktrpcrvy2dx/sunglasses.mp3?rlkey=ucua2rk0lo8pjshrdjm7emfzn&st=l06hkykc&dl=1"
-            }
-        ]
-    },{
+{
         "id":5,
         "title":"Level 2 - End of Level",
         "desc": "Choose the correct word that describes the image",
@@ -188,14 +14,14 @@
             {
                 "id": 2,
                 "img": "https://img.freepik.com/free-photo/store-famous-marrakesh-souk_268835-3995.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "choices": ["Recuerdo","El viaje","Moneda"],
+                "choices": ["Recuerdo","Viaje","Moneda"],
                 "answer": "Recuerdo"
             },
             {
                 "id": 3,
                 "img": "https://img.freepik.com/free-photo/airport-terminal_1417-1461.jpg?t=st=1721671873~exp=1721675473~hmac=85d718bd712b1d3c5f1096236fc982417fe3ffd82d44a8f0eb468d060fe7fb6c&w=826",
-                "choices": ["La maleta","El automático","El aeropuerto"],
-                "answer": "El aeropuerto"
+                "choices": ["La Maleta","El Automático","El Aeropuerto"],
+                "answer": "El Aeropuerto"
             },
             {
                 "id": 4,
@@ -206,32 +32,32 @@
             {
                 "id": 5,
                 "img": "https://img.freepik.com/free-photo/vanity-case-products-assortment_23-2149879911.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "choices": ["Recuerdo","El viaje","Artículos de tocador"],
+                "choices": ["Recuerdo","Viaje","Artículos de tocador"],
                 "answer": "Artículos de tocador"
             }, {
                 "id": 6,
                 "img": "https://img.freepik.com/free-photo/place-flying-sunset-sky_1112-1132.jpg?t=st=1721672447~exp=1721676047~hmac=f45688bcb8cfd299cca1ddaa832b63db9bdfacea5420120a88d204923a2c0497&w=900",
-                "choices": ["El aeropuerto","El viaje","El Avión"],
+                "choices": ["El Aeropuerto","El Viaje","El Avión"],
                 "answer": "El Avión"
             },{
                 "id": 7,
                 "img": "https://img.freepik.com/premium-psd/transparent-background-with-isolated-orange-plastic-suitcase_176841-75050.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "choices": ["La Maleta","El puente","La mochila"],
+                "choices": ["La Maleta","El Puente","La Mochila"],
                 "answer": "La Maleta"
             },{
                 "id": 8,
                 "img": "https://img.freepik.com/free-vector/foreign-passport-two-airplane-tickets_80328-204.jpg?t=st=1721672531~exp=1721676131~hmac=d63f39636c369ee8cc4fba9e6d423b79a95dee4c3dc96675f36fbdf19cfb89ba&w=740",
-                "choices": ["El Boleto","El puente","El viaje"],
+                "choices": ["El Boleto","El Puente","El Viaje"],
                 "answer": "El Boleto"
             },{
                 "id": 9,
-                "img": "https://img.freepik.com/free-psd/travel-adventure-invitation-template_23-2150861165.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "choices": ["La mochila","La playa","El viaje"],
-                "answer": "El viaje"
+                "img": "https://img.freepik.com/free-vector/travel-background-flat-style_23-2147766297.jpg?t=st=1723204491~exp=1723208091~hmac=d7e8bd86e5ad44f22d291de546ff6726a570cf749f8ef452faa6f3411ae5712a&w=740",
+                "choices": ["La Mochila","La Playa","El Viaje"],
+                "answer": "El Viaje"
             },{
                 "id": 10,
                 "img": "https://img.freepik.com/free-psd/realistic-isolated-blue-backpack-transparent-background_125540-3532.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
-                "choices": ["El equipaje","La Mochila","La maleta"],
+                "choices": ["El Equipaje","La Mochila","La Maleta"],
                 "answer": "La Mochila"
             }
         ]

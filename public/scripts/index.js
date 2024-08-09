@@ -1,6 +1,6 @@
 let state = {
     cardIndex: 0,
-    lvlIndex: -2,
+    lvlIndex: -3,
     checkAnswer: false,
     name: "",
     age: 18,
@@ -15,7 +15,7 @@ function setState(newState,data) {
 
 window.onDragStart = function(event) {
     event.dataTransfer.setData('text/plain', event.target.id);
-    event.currentTarget.style.backgroundColor = 'rgb(253, 255, 210)';
+    // event.currentTarget.style.backgroundColor = 'rgb(253, 255, 210)';
 };
 
 
@@ -29,14 +29,13 @@ window.onDrop = function(event) {
     const draggableElement = document.getElementById(id);
     let dropzone = event.target;
 
-    // Ensure the dropzone is correctly identified
     if (!dropzone.classList.contains('label-dropzone')) {
         dropzone = dropzone.closest('.label-dropzone');
     }
 
-    // Check if the dropzone already has a child element
     if (dropzone && dropzone.children.length === 0) {
         dropzone.appendChild(draggableElement);
+        draggableElement.style.backgroundColor = 'rgb(253, 255, 210)';
     } else {
         alert("This drop zone can only have one label.");
         draggableElement.style.backgroundColor = '#FFB4C2';
@@ -48,7 +47,7 @@ window.onDrop = function(event) {
 function render(data) {
     var cardHTML = ``
 
-    if(state.lvlIndex == -1){
+    if(state.lvlIndex == -2){
         document.getElementById("title1").textContent = "How much Spanish do you know?"
         document.getElementById("title1").style.marginLeft = "5rem"
         cardHTML =`
@@ -84,12 +83,25 @@ function render(data) {
         document.getElementById("ageInput").style.margin="1rem";
         document.getElementById("age").style.border="0.1rem solid black";
         document.getElementById("age").style.fontSize="2rem";
-    } else if(state.lvlIndex >= 0){
-        if(state.lvlIndex == 0){
-            document.getElementById("title-card").remove()
-            document.getElementById("title-area").remove()
-        }
+    } else if(state.lvlIndex == -1){
+        var questionsHTML = `
+        <div id="questions-prev">
+            <h1 style="text-align:center;font-size:3rem;margin:1rem;">Questions Preview</h1>
+            <p style="font-size:2rem;margin:0.5rem;">Here is a preview of the questions you will encounter today</p>
+                <div class="q-prev">
+                    <h4>Multiple Choice Questions</h4>
+                    <img src="/styles/mcq.jpg" alt="MCQ">
+                </div>
+                <div class="q-prev">
+                    <h4>Sort the Words to form a Sentence</h4>
+                    <img src="/styles/sort.jpg" alt="sort">
+                </div>
+                <button id="startBtn" style="margin:1rem;" onclick="Navigate();">Next</button>
+        </div>
+        `
 
+        document.getElementById("data").innerHTML = questionsHTML
+    }else if(state.lvlIndex >= 0){
         if(data[state.lvlIndex].type=="vocab"){
             globalThis.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 
@@ -177,9 +189,11 @@ function render(data) {
 
             data[state.lvlIndex].elements.forEach((q,x)=>{
                 wordsHTML = q.labels.map((c, i) => `
+                <div id="word-${i}" class="label-dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);" ${c.ignore == false ? 'style="background-color:#B5CFB7"' : 'style="background-color:rgba(0, 0, 0, 0);"'} >
                     <div id="draggable-${x}-${i}" class="draggable-label" ${c.ignore==false ? 'draggable="true"' : 'draggable="false" style="background-color: rgb(0, 0, 0,0);"'} draggable="true" ondragstart="onDragStart(event);">
                         ${c.txt}
                     </div>
+                </div>
                 `).join('')
 
                 areaHTML = q.answer.map((c, i) => `
@@ -310,7 +324,18 @@ fetch("/api/spanishTrip")
     window.Navigate = async function(){
         if(state.checkAnswer == true){
             checkAnswer(data)
-        } else if(data[state.lvlIndex].id == data.length){
+        } else if(state.lvlIndex == -1){
+            setState(
+                { 
+                    cardIndex: 0,
+                    lvlIndex: ++state.lvlIndex,
+                    checkAnswer: false,
+                    score: state.score,
+                    name: state.name,
+                    age: state.age
+                },
+                data)
+        }else if(data[state.lvlIndex].id == data.length){
             let user = {
                 "userName":state.name,
                 "age": state.age,
@@ -338,23 +363,28 @@ fetch("/api/spanishTrip")
             document.getElementById("data").innerHTML = endHTML
         }
         else if(state.lvlIndex >= 0){
-            setState(
-                { 
-                    cardIndex: 0,
-                    lvlIndex: ++state.lvlIndex,
-                    checkAnswer: false,
-                    score: state.score,
-                    name: state.name,
-                    age: state.age
-                },
-                data)
+            if (confirm(`You will now move onto the ${data[state.lvlIndex + 1].type} - the next section!\nYou cannot go back`)) {
+                //OK
+                setState(
+                    { 
+                        cardIndex: 0,
+                        lvlIndex: ++state.lvlIndex,
+                        checkAnswer: false,
+                        score: state.score,
+                        name: state.name,
+                        age: state.age
+                    },
+                    data)
+              } else {
+                //Cancel
+              }
         }
     }
 
     document.getElementById("startBtn").onclick = () => {
         if(state.checkAnswer == true){
             checkAnswer(data)
-        }  else if(state.lvlIndex== -2){
+        }  else if(state.lvlIndex== -3){
             setState(
                 { 
                     cardIndex: 0,
@@ -365,7 +395,7 @@ fetch("/api/spanishTrip")
                     age: state.age
                 },
                 data)
-        } else if(state.lvlIndex== -1){
+        } else if(state.lvlIndex== -2){
             var userName = document.getElementById("name").value
             var userAge = document.getElementById("age").value
             
