@@ -325,7 +325,7 @@ function checkAnswer(data) {
         age: state.age,
         confirmation: false,
         questionScore: state.questionScore,
-        skillLevel: "",
+        skillLevel: state.skillLevel,
       };
     }
   } else if (data[state.lvlIndex].type == "sort") {
@@ -414,6 +414,9 @@ fetch("/api/spanishTrip")
             score: state.score,
             name: state.name,
             age: state.age,
+            skillLevel: userSkill.value,
+            confirmation: state.confirmation,
+            questionScore: state.questionScore
           },
           data
         );
@@ -462,6 +465,9 @@ fetch("/api/spanishTrip")
                   score: state.score,
                   name: state.name,
                   age: state.age,
+                  skillLevel: userSkill.value,
+                  confirmation: state.confirmation,
+                  questionScore: state.questionScore
                 },
                 data
               );
@@ -481,6 +487,9 @@ fetch("/api/spanishTrip")
             score: state.score,
             name: state.name,
             age: state.age,
+            skillLevel: userSkill.value,
+            confirmation: state.confirmation,
+            questionScore: state.questionScore
           },
           data
         );
@@ -514,6 +523,9 @@ fetch("/api/spanishTrip")
             data
           );
         }
+
+        console.log(state.skillLevel);
+        
       }
     };
 
