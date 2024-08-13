@@ -127,17 +127,18 @@ img {
 }
 
 #title1{
-  font-size: 3rem;
-}
-
-#subtitle1{
   font-size: 2rem;
 }
 
-#title-card{
+#subtitle1{
+  font-size: 1rem;
+}
+
+#title-card {
   position: absolute;
-  height: 70rem;
-  left: 20rem;
+  height: 45rem;
+  left: 15rem;
+  top: -3rem;
   transform: scaleY(-1) translateY(100px);
 }
 
@@ -161,13 +162,13 @@ button:active {
   border-bottom: 2px solid rgb(50, 50, 50);
 }
 
-#title-area{
+#title-area {
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 20rem;
-  left: 30rem;
+  top: 10rem;
+  left: 20rem;
 }
 
 .table-wrap{
@@ -240,4 +241,161 @@ table th{
   height:10rem;
   width:13rem;
   margin: 0.5rem;
+}
+
+#skill-level-radio{
+  margin-left:4rem;
+}
+
+#title2{
+ text-align:center;
+ font-size:3rem;
+ margin:1rem;
+}
+
+#subtitle2{
+  font-size:2rem;
+  margin:0.5rem;
+}
+
+#title-MCQ{
+  text-align:center;
+  font-size:3rem;
+  margin:1rem;
+}
+
+#subtitle-MCQ{
+  font-size:2rem;
+  margin:0.5rem;
+}
+
+@media screen and (min-width: 1920px){
+  #title-card{
+    height: 150rem;
+    top: -25rem;
+    left: 15%;
+  }
+
+  #title-area{
+    left: 23%;
+    top: 23%;
+  }
+
+  #title1{
+    font-size: 6.5rem;
+  }
+
+  #subtitle1{
+    font-size: 4rem;
+  }
+
+  #startBtn{
+    font-size: 4rem;
+  }
+
+  #name{
+    font-size: 4.5rem;
+  }
+
+  #name-label{
+    font-size: 4.5rem;
+    margin-right: 2rem;
+    margin-left: 10rem
+  }
+
+  #age{
+    font-size: 4.5rem;
+  }
+
+  #ageInput{
+    margin-bottom: 5rem;
+  }
+
+  #nameInput{
+    margin-bottom: 4rem;
+  }
+
+  #age-label{
+    font-size: 4.5rem;
+    margin-right: 4rem;
+    margin-left: 10rem
+  }
+
+  #skill-level-radio{
+    margin-top: 5rem;
+    margin-left: 18rem;
+  }
+
+  #skill-level input[type="radio"] {
+    border: 0px;
+    height: 4em;
+    transform: scale(3);
+  }
+
+  table img{
+    width: auto;
+    object-fit: contain;
+    height: 20%;
+  }
+
+  td{
+    font-size: 5rem
+  }
+
+  th{
+    font-size: 4rem
+  }
+
+  #title2{
+    font-size:10rem;
+  }
+
+  #subtitle2{
+    font-size: 5rem;
+  }
+   
+  #info2{
+    font-size: 3rem;
+  }
+
+  audio{
+    transform: scale(2.5);
+  }
+
+  .vocab-img img {
+    height: auto;
+    width: 25rem;
+    margin: 0.5rem;
+  }
+
+  .MCQ input[type="radio"] {
+    border: 0px;
+    height: 4em;
+    transform: scale(2);
+  }
+
+  .elementMCQ{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: space-between;
+  }
+
+  #title-MCQ{
+    font-size:6rem;
+  }
+  
+  #subtitle-MCQ{
+    font-size:3rem;
+    margin-bottom: 3rem;
+  }
+
+  .MCQ-label{
+    font-size: 3rem;
+    margin: 1rem;
+  }
+
+  .MCQ-choice{
+    margin: 1rem;
+  }
 }
