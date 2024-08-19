@@ -50,9 +50,11 @@ function render(data) {
   var cardHTML = ``;
 
   if (state.lvlIndex == -1) {
-    document.getElementById("title1").textContent = "How much Spanish do you know?";
+    document.getElementById("title1").textContent = "Fill in your details";
     document.getElementById("title1").style.marginLeft = "4rem";
     document.getElementById("title1").style.marginTop = "-3rem";
+    document.getElementById("title1").style.width = "30rem";
+    document.getElementById("title1").style.textAlign = "center";
     cardHTML = `
         <div id="skill-level">
             <div id="nameInput">
@@ -62,14 +64,6 @@ function render(data) {
             <div id="ageInput">
                 <label for="age" id="age-label">Age </label><br>
                 <input type="number" id="age" name="age">
-            </div>
-            <div id="skill-level-radio">
-                <input type="radio" id="new" name="skill" value="new-to-spanish">
-                <label for="new" id="new-label">I'm new to Spanish</label><br>
-                <input type="radio" id="common" name="skill" value="common-words">
-                <label for="common" id="common-label">I know some common words</label><br>
-                <input type="radio" id="conversation" name="skill" value="conversation">
-                <label for="conversation" id="convo-label">I can have basic conversation</label><br>
             </div>
         </div>
         `;
@@ -83,34 +77,22 @@ function render(data) {
     document.getElementById("nameInput").style.gap = "0.5rem";
     document.getElementById("nameInput").style.margin = "1rem";
     document.getElementById("name").style.border = "0.1rem solid black";
-    document.getElementById("name").style.fontSize = "1.5rem";
+
     document.getElementById("ageInput").style.display = "flex";
     document.getElementById("ageInput").style.gap = "0.5rem";
     document.getElementById("ageInput").style.margin = "1rem";
     document.getElementById("age").style.border = "0.1rem solid black";
-    document.getElementById("age").style.fontSize = "1.5rem";
+
     document.getElementById("age").style.marginLeft = "1rem";
 
     document.getElementById("startBtn").style.marginLeft = "3.5rem";
     document.getElementById("startBtn").style.marginTop = "-1rem";
-
-    document.getElementById("new-label").style.fontSize = "1.5rem";
-    document.getElementById("common-label").style.fontSize = "1.5rem";
-    document.getElementById("convo-label").style.fontSize = "1.5rem";
-
 
     const mediaQuery = window.matchMedia("(min-width: 1920px)");
 
     function handleScreenSizeChange(event) {
       if (event.matches) {
         document.getElementById("title1").style.marginLeft = "12rem";
-
-        document.getElementById("new-label").style.fontSize = "4.5rem";
-        document.getElementById("common-label").style.fontSize = "4.5rem";
-        document.getElementById("convo-label").style.fontSize = "4.5rem";
-        document.getElementById("new-label").style.marginLeft = "1rem";
-        document.getElementById("common-label").style.marginLeft = "1rem";
-        document.getElementById("convo-label").style.marginLeft = "1rem";
 
         document.getElementById("startBtn").style.marginTop = "5rem";
 
@@ -414,7 +396,7 @@ fetch("/api/spanishTrip")
             score: state.score,
             name: state.name,
             age: state.age,
-            skillLevel: userSkill.value,
+            skillLevel: state.value,
             confirmation: state.confirmation,
             questionScore: state.questionScore
           },
@@ -424,7 +406,6 @@ fetch("/api/spanishTrip")
         let user = {
           userName: state.name,
           age: state.age,
-          skill: state.skillLevel,
           questionScore: {
             MCQ: state.questionScore[0],
             sort: state.questionScore[1]
@@ -465,7 +446,7 @@ fetch("/api/spanishTrip")
                   score: state.score,
                   name: state.name,
                   age: state.age,
-                  skillLevel: userSkill.value,
+                  skillLevel: state.value,
                   confirmation: state.confirmation,
                   questionScore: state.questionScore
                 },
@@ -487,7 +468,7 @@ fetch("/api/spanishTrip")
             score: state.score,
             name: state.name,
             age: state.age,
-            skillLevel: userSkill.value,
+            skillLevel: state.skillLevel,
             confirmation: state.confirmation,
             questionScore: state.questionScore
           },
@@ -496,7 +477,6 @@ fetch("/api/spanishTrip")
       } else if (state.lvlIndex == -1) {
         var userName = document.getElementById("name").value;
         var userAge = document.getElementById("age").value;
-        var userSkill = document.querySelector('input[name="skill"]:checked');
 
         if (userName == "") {
           document.getElementById("name").style.border = "0.2rem solid red";
@@ -504,10 +484,7 @@ fetch("/api/spanishTrip")
         if (userAge == "") {
           document.getElementById("age").style.border = "0.2rem solid red";
         }
-        if(userSkill == null){
-          document.getElementById("skill-level-radio").style.border = "0.2rem solid red";
-        }
-        if (userName != "" && userAge != "" && userSkill !=null) {
+        if (userName != "" && userAge != "") {
           setState(
             {
               cardIndex: 0,
@@ -516,16 +493,13 @@ fetch("/api/spanishTrip")
               score: state.score,
               name: userName,
               age: userAge,
-              skillLevel: userSkill.value,
+              skillLevel: state.value,
               confirmation: state.confirmation,
               questionScore: state.questionScore
             },
             data
           );
         }
-
-        console.log(state.skillLevel);
-        
       }
     };
 
