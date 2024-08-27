@@ -268,41 +268,41 @@
     },{
         "id":7,
         "title":"Using Directions",
-        "desc": "Now you know how to ask lets how to actually use them",
+        "desc": "Now that you know some questions, let's see how to use them",
         "type": "vocab",
         "elements":[
             {
                 "id": 1,
-                "spanish": "¿Dónde está el museo más cercano?",
-                "english": "Where is the nearest museum?",
+                "spanish": "<span style=\"color: red; font-weight:bold;\">¿Dónde está </span>el museo más cercano?",
+                "english": "<span style=\"color: red; font-weight:bold;\">Where is</span> the nearest museum?",
                 "arabic": "أين يقع أقرب متحف؟",
                 "img": "https://img.freepik.com/free-vector/local-tourism-map-with-map_23-2148595227.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_user",
                 "audio": "https://www.dropbox.com/scl/fi/pxo7voirbss5cpxslaofp/D-nde-est-el-museo-m-s-cercano.mp3?rlkey=njcn98jtstwh9iie6sv6wnxzs&st=1dd47k7f&dl=1"
             },{
                 "id": 2,
-                "spanish": "¿Cómo llego a la estación de tren?",
-                "english": "How do I get to the train station?",
+                "spanish": "¿<span style=\"color: red; font-weight:bold;\">Cómo llego</span> a la estación de tren?",
+                "english": "<span style=\"color: red; font-weight:bold;\">How do I get to</span> the train station?",
                 "arabic": "كيف يمكنني الوصول إلى محطة القطار؟",
                 "img": "https://img.freepik.com/free-photo/travelers-take-pictures-couples-while-waiting-trains_1150-12441.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_user",
                 "audio": "https://www.dropbox.com/scl/fi/15xbc34coqc4ngjn89csu/C-mo-llego-a-la-estaci-n-de-tren.mp3?rlkey=1zmcj4t83y4p6ravd572zbwzv&st=136n7u22&dl=1"
             },{
                 "id": 3,
-                "spanish": "Cuánto cuesta un taxi al aeropuerto?",
-                "english": "How much is a taxi to the airport?",
+                "spanish": "<span style=\"color: red; font-weight:bold;\">Cuánto cuesta</span> un taxi al aeropuerto?",
+                "english": "<span style=\"color: red; font-weight:bold;\">How much <span style=\"color: red; font-weight:bold;\">is a taxi to the airport?",
                 "arabic": "كم تكلفة سيارة الأجرة إلى المطار؟",
                 "img": "https://img.freepik.com/premium-vector/taxi-driver-yellow-taxi_165488-2769.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_user",
                 "audio": "https://www.dropbox.com/scl/fi/zhgu65hhsuqes3eevh7zo/Cu-nto-cuesta-un-taxi-al-aeropuerto.mp3?rlkey=n7jx7mp676pljs5oruon59cd5&st=1yyoqswy&dl=1"
             },{
                 "id": 4,
-                "spanish": "¿Hay un autobús que vaya al centro?",
-                "english": "Is there a bus to the city center?",
+                "spanish": "¿<span style=\"color: red; font-weight:bold;\">Hay un</span> autobús que vaya al centro?",
+                "english": "<span style=\"color: red; font-weight:bold;\">Is there </span>a bus to the city center?",
                 "arabic": "هل هناك حافلة إلى وسط المدينة؟",
                 "img": "https://img.freepik.com/free-vector/urban-bus-bus-stop-with-flat-design_23-2147833954.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_hybrid",
                 "audio": "https://www.dropbox.com/scl/fi/6imvspe3po43y0upn1tnc/Hay-un-autob-s-que-vaya-al-centro.mp3?rlkey=crdvad4comnu76gq4s5azynyz&st=49o0sgif&dl=1"
             },{
                 "id": 5,
-                "spanish": "Por favor, tráigame un mapa de la ciudad.",
-                "english": "Please bring me a city map",
+                "spanish": "<span style=\"color: red; font-weight:bold;\">Por favor,</span> tráigame un mapa de la ciudad.",
+                "english": "<span style=\"color: red; font-weight:bold;\">Please bring me</span> a city map",
                 "arabic": "من فضلك أحضر لي خريطة المدينة",
                 "img": "https://img.freepik.com/free-photo/woman-jeans-jacket-holds-her-hands-touristic-map_8353-1636.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_user",
                 "audio": "https://www.dropbox.com/scl/fi/csb4gz3i3p2nn1xsopk5v/Por-favor-tr-igame-un-mapa-de-la-ciudad.mp3?rlkey=88x1mlcbsfq88vx9o6zysrchr&st=isx085jw&dl=1"

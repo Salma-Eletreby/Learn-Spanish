@@ -137,19 +137,33 @@ img {
 button,
 button:focus {
   font-size: 17px;
+  /* padding: 10px 25px; */
+  /* border-radius: 0.7rem; */
+  background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+  /* border: 2px solid rgb(50, 50, 50);
+  border-bottom: 5px solid rgb(50, 50, 50);
+  box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);  */
+  /* transform: translate(0, -3px); 
+  cursor: pointer; 
+  transition: 0.2s;
+  transition-timing-function: linear; */
+}
+
+#startBtn,
+#startBtn:focus{
   padding: 10px 25px;
   border-radius: 0.7rem;
   background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
-  border: 2px solid rgb(50, 50, 50);
+  border: 2px solid rgb(50, 50, 50); 
   border-bottom: 5px solid rgb(50, 50, 50);
-  box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);
-  transform: translate(0, -3px);
-  cursor: pointer;
+  box-shadow: 0px 1px 6px 0px rgb(158, 129, 254); 
+  transform: translate(0, -3px); 
+  cursor: pointer; 
   transition: 0.2s;
   transition-timing-function: linear;
 }
 
-button:active {
+#startBtn:active {
   transform: translate(0, 0);
   border-bottom: 2px solid rgb(50, 50, 50);
 }
@@ -164,7 +178,7 @@ button:active {
 }
 
 .table-wrap{
-  display:block;
+  display:flex;
   width: 90%;
 }
 
@@ -209,7 +223,7 @@ table th{
 .labels-to-sort,.sorted-labels {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   border-bottom: 0.2rem dotted grey;
 }
@@ -223,7 +237,7 @@ table th{
   min-width: 4rem;
   padding: 2rem;
   /* font-size: 2.5rem; */
-  margin: 2rem;
+  margin: 1.5rem;
 }
 
 .sort-area{
@@ -270,146 +284,99 @@ table th{
   background-color: lightgreen
 }
 
-@media screen and (min-width: 1920px){
+.nav-btn {
+  border: 0.1rem solid black;
+  border-radius: 50%;
+  padding: 1.5em;
+  height: 0.5em;
+  margin: 8em;
+  text-align: center;
+}
+
+@media screen and (min-width: 1800px){
   #title-card{
-    height: 150rem;
-    top: -25rem;
-    left: 15%;
+    transform: scale(1.6) scaleY(-1);
+    top: 1rem;
+    left: 25%;
   }
 
   #title-area{
-    left: 23%;
-    top: 23%;
+    transform: scale(1.5);
+    margin: 12rem;
   }
 
-  #title1{
-    font-size: 6.5rem;
-    text-align: center;
-    width: 100rem;
-  }
-
-  #subtitle1{
-    font-size: 4rem;
-  }
-
-  #startBtn{
-    font-size: 4rem;
-  }
-
-  #name{
-    font-size: 4.5rem;
+  #render{
+    transform: scale(0.5);
+    margin-left: -13rem;
   }
 
   #name-label{
-    font-size: 4.5rem;
-    margin-right: 2rem;
-    margin-left: 10rem
-  }
-
-  #age{
-    font-size: 4.5rem;
-  }
-
-  #ageInput{
-    margin-bottom: 5rem;
-  }
-
-  #nameInput{
-    margin-bottom: 4rem;
-  }
-
-  #age-label{
-    font-size: 4.5rem;
-    margin-right: 4rem;
-    margin-left: 10rem
-  }
-
-  #skill-level-radio{
-    margin-top: 5rem;
-    margin-left: 18rem;
-  }
-
-  #skill-level input[type="radio"] {
-    border: 0px;
-    height: 4em;
-    transform: scale(3);
-  }
-
-  table img{
-    width: auto;
-    object-fit: contain;
-    height: 20%;
-  }
-
-  td{
-    font-size: 5rem
-  }
-
-  th{
-    font-size: 4rem
-  }
-
-  #title2{
-    font-size:10rem;
-  }
-
-  #subtitle2{
-    font-size: 5rem;
-  }
-   
-  #info2{
     font-size: 3rem;
   }
 
-  audio{
-    transform: scale(2.5);
+  #age-label{
+    font-size: 3rem;
   }
 
-  .vocab-img img {
-    height: auto;
-    width: 25rem;
-    margin: 0.5rem;
-  }
-
-  .MCQ input[type="radio"] {
-    border: 0px;
-    height: 4em;
+  .nav-btn {
     transform: scale(2);
+  }
+
+  #title2{
+    font-size:3rem;
+  }
+
+  #subtitle2{
+    font-size: 2rem;
+  }
+   
+  #info2{
+    font-size: 2rem;
+  }
+
+  .table-wrap{
+    gap: 8rem;
+    margin-top: 2rem;
+  }
+
+  table img{
+    height: 20rem;
+    width: auto;
+  }
+
+  th,td{
+    font-size: 2em;
+  }
+
+  audio{
+    transform: scale(1.35);
   }
 
   .elementMCQ{
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
-    justify-content: space-between;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem
   }
 
-  #title-MCQ{
-    font-size:6rem;
-  }
-  
-  #subtitle-MCQ{
-    font-size:3rem;
-    margin-bottom: 3rem;
-  }
-
-  .MCQ-label{
-    font-size: 3rem;
-    margin: 1rem;
+  .vocab-img img{
+    height: 25em;
+    width: auto;
   }
 
   .MCQ-choice{
-    margin: 1rem;
+    transform: scale(4);
+    margin: 5rem;
   }
 
-  #end-title{
-    margin-left: 28rem;
-    font-size: 20rem;
-    margin-top: 10rem
+  .MCQ{
+    width: 20%;
   }
 
   .label-dropzone, .draggable-label {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 
   .labels-to-sort{
