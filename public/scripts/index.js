@@ -113,7 +113,8 @@ function render(data) {
 <div class="vocab${state.lvlIndex}" style="display: flex; flex-direction: column; align-items: center">
   <h1 id="title2">${data[state.lvlIndex].title}</h1>
   <p id="subtitle2">${data[state.lvlIndex].desc}</p>
-  <p id="info2">Click on ⋮ => playback speed to slow down or speed the audio</p>
+  <p id="progress-bar">${state.cardIndex+1}/${data[state.lvlIndex].elements.length}</p>
+  ${state.lvlIndex == 0 && state.cardIndex ==0 ? `<p id="info2">Click on ⋮ => playback speed to slow down or speed the audio</p>` : ""}
   <div class="table-wrap">
     <table id="table">
       <tr>
