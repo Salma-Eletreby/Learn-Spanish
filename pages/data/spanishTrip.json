@@ -46,7 +46,7 @@
     "type": "vocab",
     "elements": [
       {
-        "id": 1,
+        "id": 5,
         "spanish": "El Avión",
         "english": "Airplane",
         "arabic": "طائرة",
@@ -54,7 +54,7 @@
         "audio": "https://www.dropbox.com/scl/fi/5ke27zb4l85odqlmk7t5n/airplane.mp3?rlkey=r3gs2kxt4v7r8y38wtou926v7&st=z8scd78f&dl=1"
       },
       {
-        "id": 2,
+        "id": 6,
         "spanish": "El Boleto",
         "english": "Ticket",
         "arabic": "تذكرة",
@@ -62,7 +62,7 @@
         "audio": "https://www.dropbox.com/scl/fi/n494c3std6fovfbube42j/ticket.mp3?rlkey=sosto50fef2i9dz6qpqf0jfxd&st=bd81pcyg&dl=1"
       },
       {
-        "id": 3,
+        "id": 7,
         "spanish": "La Maleta",
         "english": "Suitcase",
         "arabic": "حقيبة سفر",
@@ -70,7 +70,7 @@
         "audio": "https://www.dropbox.com/scl/fi/gu0dhajnu2imfzc8jhlqf/suitcase.mp3?rlkey=d4l9au5yjtbxm0aln18rnb5m3&st=mkl9q24v&dl=1"
       },
       {
-        "id": 4,
+        "id": 8,
         "spanish": "La Mochila",
         "english": "Backpack",
         "arabic": "حقيبة ظهر",
@@ -78,7 +78,7 @@
         "audio": "https://www.dropbox.com/scl/fi/chuc8liinnb4aibd4yps0/backpack.mp3?rlkey=pzahjlr95c9wt00zqjn5pabqs&st=0srpbb5w&dl=1"
       },
       {
-        "id": 5,
+        "id": 9,
         "spanish": "El Viaje",
         "english": "Trip",
         "arabic": "رحلة",
@@ -150,35 +150,35 @@
     "type": "vocab",
     "elements": [
       {
-        "id": 1,
+        "id": 7,
         "spanish": "Recuerdo",
         "english": "Souvenir",
         "img": "https://img.freepik.com/free-photo/store-famous-marrakesh-souk_268835-3995.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
         "audio": "https://www.dropbox.com/scl/fi/u90v42bn2jilj08hg29yp/Souvenir.mp3?rlkey=wu4ekz5uk0bgocncfaiyq9acj&st=xvfq9fk5&dl=1"
       },
       {
-        "id": 2,
+        "id": 8,
         "spanish": "Itinerario",
         "english": "Itinerary",
         "img": "https://img.freepik.com/free-vector/gradient-travel-itinerary-template-design_23-2149650580.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
         "audio": "https://www.dropbox.com/scl/fi/umtka2whbl0fd6beb5tlm/Itenary.mp3?rlkey=o7voj4pvyaapg1rsoxk7qnf52&st=3uvzeb10&dl=1"
       },
       {
-        "id": 3,
+        "id": 9,
         "spanish": "Artículos de tocador",
         "english": "Toiletries",
         "img": "https://img.freepik.com/free-photo/set-hygiene-supplies_23-2147787965.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_hybrid",
         "audio": "https://www.dropbox.com/scl/fi/2qktuwcycr015ndhduofa/toiletries.mp3?rlkey=75n0cb31m3kxuvtd5zhzm016s&st=lu1pk7ie&dl=1"
       },
       {
-        "id": 4,
+        "id": 10,
         "spanish": "Paraguas",
         "english": "Umbrella",
         "img": "https://img.freepik.com/free-vector/umbrella-protection-icon-vector-isolated_24911-109216.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
         "audio": "https://www.dropbox.com/scl/fi/6gcqvnwzdbt3b24a1wvw3/Umbrella.mp3?rlkey=nrytt8ijm6jg0cfihr2ofpud7&st=t9zpoh1v&dl=1"
       },
       {
-        "id": 5,
+        "id": 11,
         "spanish": "Gafas de sol",
         "english": "Sunglasses",
         "img": "https://img.freepik.com/free-photo/glasses-with-slightly-rounded-frame_23-2150670762.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",

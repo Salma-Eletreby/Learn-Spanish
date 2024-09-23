@@ -109,11 +109,24 @@ function render(data) {
 
       document.getElementById("sec1").style.width = "0%";
       document.getElementById("sec3").style.width = "0%";
+
+      var currentIndexBar = data[state.lvlIndex].elements[state.cardIndex].id;
+      var totalWordsBar = 1;
+
+      if(state.lvlIndex == 0 || state.lvlIndex == 1){
+        totalWordsBar = data[0].elements.length + data[1].elements.length
+      } else if(state.lvlIndex == 2 || state.lvlIndex == 3){
+        totalWordsBar = data[2].elements.length + data[3].elements.length
+      } else if(state.lvlIndex == 6){
+        totalWordsBar = data[6].elements.length
+      }
+
+
       let vocabHtml = `
 <div class="vocab${state.lvlIndex}" style="display: flex; flex-direction: column; align-items: center">
   <h1 id="title2">${data[state.lvlIndex].title}</h1>
   <p id="subtitle2">${data[state.lvlIndex].desc}</p>
-  <p id="progress-bar">${state.cardIndex+1}/${data[state.lvlIndex].elements.length}</p>
+  <p id="progress-bar">${state.lvlIndex == 5 ? '' : `${currentIndexBar}/${totalWordsBar}`}</p>
   ${state.lvlIndex == 0 && state.cardIndex ==0 ? `<p id="info2">Click on ⋮ => playback speed to slow down or speed the audio</p>` : ""}
   <div class="table-wrap">
     <table id="table">
@@ -328,6 +341,20 @@ fetch("/api/spanishTrip")
                 },
                 totalScore: state.score,
               };
+
+              document.getElementById("startBtn").style.display="none"
+              document.getElementById("data").innerHTML += `
+<div class="dot-spinner">
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+</div>
+              `
               const response = await fetch("/api/scores", {
                 method: "POST",
                 headers: {
