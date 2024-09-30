@@ -47,6 +47,7 @@ window.onDrop = function (event) {
 };
 
 function render(data) {
+  savetoLocalStorage();
   var cardHTML = ``;
 
   if (state.lvlIndex == -1) {
@@ -154,6 +155,10 @@ function render(data) {
       document.getElementById("data").innerHTML = vocabHtml;
       state.confirmation = true;
     } else if (data[state.lvlIndex].type == "MCQ") {
+
+      document.getElementById("sec1").style.width = "0%";
+      document.getElementById("sec3").style.width = "0%";
+
       let subHTML = data[state.lvlIndex].elements[state.cardIndex].choices
         .map(
           (e, x) =>
@@ -184,6 +189,9 @@ function render(data) {
       document.getElementById("data").innerHTML = questionHTML;
       state.checkAnswer = true;
     } else if (data[state.lvlIndex].type == "sort") {
+      document.getElementById("sec1").style.width = "0%";
+      document.getElementById("sec3").style.width = "0%";
+
       const choicesHTML = data[state.lvlIndex].elements[state.cardIndex].labels
         .map(
           (c, i) => `
@@ -374,6 +382,7 @@ fetch("/api/spanishTrip")
                 </svg>
                 `;
   
+                removeFromLocalStorage()
               document.getElementById("data").innerHTML = endHTML;
           } else{
             setState(
@@ -437,20 +446,43 @@ fetch("/api/spanishTrip")
           document.getElementById("age").style.border = "0.2rem solid red";
         }
         if (userName != "" && userAge != "") {
-          setState(
-            {
-              cardIndex: 0,
-              lvlIndex: ++state.lvlIndex,
-              checkAnswer: false,
-              score: state.score,
-              name: userName,
-              age: userAge,
-              skillLevel: state.value,
-              confirmation: state.confirmation,
-              questionScore: state.questionScore,
-            },
-            data
-          );
+          let userData = JSON.parse(localStorage.getItem("userDataNonGamified")) || [];
+          var isExist = userData.findIndex((d) => d.id === String(userName));
+          
+          if (isExist !== -1) {
+            if(userData[isExist].state!= state){
+              setState(userData[isExist].state,data);
+            }else{
+              setState(
+                {
+                  cardIndex: 0,
+                  lvlIndex: ++state.lvlIndex,
+                  checkAnswer: false,
+                  score: state.score,
+                  name: userName,
+                  age: userAge,
+                  skillLevel: state.value,
+                  confirmation: state.confirmation,
+                  questionScore: state.questionScore,
+                },
+                data
+              );
+            }}else{
+              setState(
+                {
+                  cardIndex: 0,
+                  lvlIndex: ++state.lvlIndex,
+                  checkAnswer: false,
+                  score: state.score,
+                  name: userName,
+                  age: userAge,
+                  skillLevel: state.value,
+                  confirmation: state.confirmation,
+                  questionScore: state.questionScore,
+                },
+                data
+              );
+            }
         }
       }
     };
@@ -460,3 +492,40 @@ fetch("/api/spanishTrip")
   .catch((error) => {
     console.error("Error:", error);
   });
+
+  window.savetoLocalStorage = function () {
+    if (state.name != "") {
+      let data = JSON.parse(localStorage.getItem("userDataNonGamified")) || [];
+  
+      var isExist = data.findIndex((d) => d.id == state.name);
+  
+      if (isExist !== -1) {
+        data[isExist] = {
+          id: state.name,
+          state: state,
+        };
+      } else {
+        data.push({
+          id: state.name,
+          state: state,
+        });
+      }
+  
+      localStorage.setItem("userDataNonGamified", JSON.stringify(data));
+    }
+  };
+  
+  window.removeFromLocalStorage = function () {
+    if (state.name != "") {
+      let data = JSON.parse(localStorage.getItem("userDataNonGamified")) || [];
+  
+      var isExist = data.findIndex((d) => d.id == state.name);
+  
+      if (isExist !== -1) {
+        data.splice(isExist, 1); // Corrected: Use splice to remove the element
+      }
+  
+      localStorage.setItem("userDataNonGamified", JSON.stringify(data));
+    }
+  };
+  
