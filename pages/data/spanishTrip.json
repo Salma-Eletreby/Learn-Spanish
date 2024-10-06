@@ -10,7 +10,7 @@
         "spanish": "El Hotel",
         "english": "Hotel",
         "arabic": "الفندق",
-        "img": "https://img.freepik.com/free-photo/aerial-shot-aria-hotel-las-vegas_181624-42881.jpg?t=st=1721671791~exp=1721675391~hmac=4a0fd7bb4eb7d3176c67dbf5e26756ee16583a05ff57c245bd9b78db2f763bee&w=740",
+        "img": "styles/images/aerial-shot-aria-hotel-las-vegas_181624-42881.avif",
         "audio": "https://www.dropbox.com/scl/fi/r1uikmzq5ydeoa9vjd7vl/hotel.mp3?rlkey=vpokbvlur51lvm0icyy09wahx&st=x6kbdqaz&dl=1"
       },
       {
@@ -18,7 +18,7 @@
         "spanish": "El Autobús",
         "english": "Bus",
         "arabic": "حافلة",
-        "img": "https://img.freepik.com/free-photo/traffic-vehicle-urban-reflections-city_1112-973.jpg?t=st=1721671816~exp=1721675416~hmac=aedb025d7f10276b6fb4d9533ab924a36c48ddd57624100fac9369be2a2d8d29&w=826",
+        "img": "styles/images/traffic-vehicle-urban-reflections-city_1112-973.jpg",
         "audio": "https://www.dropbox.com/scl/fi/7clcucmqo84ejzm5oude2/bus.mp3?rlkey=jq9mqt46vz18imx0li3zx2t2d&st=8mlz5068&dl=1"
       },
       {
@@ -26,7 +26,7 @@
         "spanish": "El Taxi",
         "english": "Taxi",
         "arabic": "سيارة اجره",
-        "img": "https://img.freepik.com/premium-psd/isolated-realistic-shiny-metalic-orange-luxury-city-taxi-cab-car-from-right-front-view_16145-9739.jpg?w=900",
+        "img": "styles/images/isolated-realistic-shiny-metalic-orange-luxury-city-taxi-cab-car-from-right-front-view_16145-9739.avif",
         "audio": "https://www.dropbox.com/scl/fi/2kuctp1q8nerely0domk0/taxi.mp3?rlkey=w7yh5fxiq3fc6ywqrea54lxrw&st=wotye265&dl=1"
       },
       {
@@ -34,7 +34,7 @@
         "spanish": "El Aeropuerto",
         "english": "Airport",
         "arabic": "مطار",
-        "img": "https://img.freepik.com/free-photo/airport-terminal_1417-1461.jpg?t=st=1721671873~exp=1721675473~hmac=85d718bd712b1d3c5f1096236fc982417fe3ffd82d44a8f0eb468d060fe7fb6c&w=826",
+        "img": "styles/images/airport-terminal_1417-1461.avif",
         "audio": "https://www.dropbox.com/scl/fi/tmzqskrvrlybyx8alhlnr/airport.mp3?rlkey=74kpx77x8v9rsdbwnaub2w4y8&st=g8m5vl1e&dl=1"
       }
     ]
@@ -50,7 +50,7 @@
         "spanish": "El Avión",
         "english": "Airplane",
         "arabic": "طائرة",
-        "img": "https://img.freepik.com/free-photo/place-flying-sunset-sky_1112-1132.jpg?t=st=1721672447~exp=1721676047~hmac=f45688bcb8cfd299cca1ddaa832b63db9bdfacea5420120a88d204923a2c0497&w=900",
+        "img": "styles/images/place-flying-sunset-sky_1112-1132.jpg",
         "audio": "https://www.dropbox.com/scl/fi/5ke27zb4l85odqlmk7t5n/airplane.mp3?rlkey=r3gs2kxt4v7r8y38wtou926v7&st=z8scd78f&dl=1"
       },
       {
@@ -58,7 +58,7 @@
         "spanish": "El Boleto",
         "english": "Ticket",
         "arabic": "تذكرة",
-        "img": "https://img.freepik.com/free-vector/foreign-passport-two-airplane-tickets_80328-204.jpg?t=st=1721672531~exp=1721676131~hmac=d63f39636c369ee8cc4fba9e6d423b79a95dee4c3dc96675f36fbdf19cfb89ba&w=740",
+        "img": "styles/images/foreign-passport-two-airplane-tickets_80328-204.avif",
         "audio": "https://www.dropbox.com/scl/fi/n494c3std6fovfbube42j/ticket.mp3?rlkey=sosto50fef2i9dz6qpqf0jfxd&st=bd81pcyg&dl=1"
       },
       {
@@ -66,7 +66,7 @@
         "spanish": "La Maleta",
         "english": "Suitcase",
         "arabic": "حقيبة سفر",
-        "img": "https://img.freepik.com/premium-psd/transparent-background-with-isolated-orange-plastic-suitcase_176841-75050.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/transparent-background-with-isolated-orange-plastic-suitcase_176841-75050.avif",
         "audio": "https://www.dropbox.com/scl/fi/gu0dhajnu2imfzc8jhlqf/suitcase.mp3?rlkey=d4l9au5yjtbxm0aln18rnb5m3&st=mkl9q24v&dl=1"
       },
       {
@@ -74,7 +74,7 @@
         "spanish": "La Mochila",
         "english": "Backpack",
         "arabic": "حقيبة ظهر",
-        "img": "https://img.freepik.com/free-psd/realistic-isolated-blue-backpack-transparent-background_125540-3532.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/realistic-isolated-blue-backpack-transparent-background_125540-3532.jpg",
         "audio": "https://www.dropbox.com/scl/fi/chuc8liinnb4aibd4yps0/backpack.mp3?rlkey=pzahjlr95c9wt00zqjn5pabqs&st=0srpbb5w&dl=1"
       },
       {
@@ -82,7 +82,7 @@
         "spanish": "El Viaje",
         "english": "Trip",
         "arabic": "رحلة",
-        "img": "https://img.freepik.com/free-vector/travel-background-flat-style_23-2147766297.jpg?t=st=1723204491~exp=1723208091~hmac=d7e8bd86e5ad44f22d291de546ff6726a570cf749f8ef452faa6f3411ae5712a&w=740",
+        "img": "styles/images/travel-background-flat-style_23-2147766297.avif",
         "audio": "https://www.dropbox.com/scl/fi/usrezaz8693w3rl1m0syf/journey.mp3?rlkey=t6a7a5o2pcbesx4kj6t0z3qqi&st=xl21pr04&dl=1"
       }
     ]
@@ -98,7 +98,7 @@
         "spanish": "El Mapa",
         "english": "Map",
         "arabic": "خريطة",
-        "img": "https://img.freepik.com/free-vector/city-map-with-label-home-pin_1284-42340.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/city-map-with-label-home-pin_1284-42340.avif",
         "audio": "https://www.dropbox.com/scl/fi/89909lay8y3hhetdyiknd/map.mp3?rlkey=541llc5uy6qixfz1gtslanb4i&st=8egikhr2&dl=1"
       },
       {
@@ -106,7 +106,7 @@
         "spanish": "El Puente",
         "english": "Bridge",
         "arabic": "كوبري",
-        "img": "https://img.freepik.com/free-photo/oresund-bridge-located-malmo-sweden-calm-blue-water-daylight_181624-48536.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/oresund-bridge-located-malmo-sweden-calm-blue-water-daylight_181624-48536.avif",
         "audio": "https://www.dropbox.com/scl/fi/pytpsgvrlhqj67k4ei8za/bridge.mp3?rlkey=iy2yytm3rkun0zo7fuce7h1vf&st=0gxqe34j&dl=1"
       },
       {
@@ -114,7 +114,7 @@
         "spanish": "El Destino",
         "english": "Destination",
         "arabic": "وجهة",
-        "img": "https://img.freepik.com/premium-vector/location-travel-road-white-background-vector-illustration_547150-344.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/location-travel-road-white-background-vector-illustration_547150-344.avif",
         "audio": "https://www.dropbox.com/scl/fi/rd2sqp04v0kau338ylv1b/destination.mp3?rlkey=n8ktxw85aqdo5bdvnomo10t2h&st=u68x1vyd&dl=1"
       },
       {
@@ -122,7 +122,7 @@
         "spanish": "El Equipaje",
         "english": "Luggage",
         "arabic": "أمتعة السفر",
-        "img": "https://img.freepik.com/free-vector/luggage-colored-composition-with-plastic-suitcases-wheels-travel-bags-clutch-flat-illustration_1284-65501.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/luggage-colored-composition-with-plastic-suitcases-wheels-travel-bags-clutch-flat-illustration_1284-65501.avif",
         "audio": "https://www.dropbox.com/scl/fi/owl4gvds8gy4smbk9hvqo/luggage.mp3?rlkey=b6rcx1o53ul9zcv2ghtae7lmr&st=50t8e0fs&dl=1"
       },
       {
@@ -130,7 +130,7 @@
         "spanish": "Moneda",
         "english": "Currency",
         "arabic": "عملة",
-        "img": "https://img.freepik.com/free-photo/business-financial-concept-stack-money-background-flat-lay_176474-6549.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/business-financial-concept-stack-money-background-flat-lay_176474-6549.avif",
         "audio": "https://www.dropbox.com/scl/fi/70rkydkyxlbo0gopug3vx/currency.mp3?rlkey=taazc6984kk4wo0wzgteom9b2&st=c92p53mv&dl=1"
       },
       {
@@ -138,7 +138,7 @@
         "spanish": "La Playa",
         "english": "Beach",
         "arabic": "شاطئ",
-        "img": "https://img.freepik.com/free-photo/beautiful-tropical-beach-sea-with-chair-blue-sky_74190-7488.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/beautiful-tropical-beach-sea-with-chair-blue-sky_74190-7488.avif",
         "audio": "https://www.dropbox.com/scl/fi/3vg0qf78tbatl65tr0x6b/Beach.mp3?rlkey=ki89mokt2lzq21tptvkznk755&st=3lfrry5j&dl=1"
       }
     ]
@@ -153,35 +153,35 @@
         "id": 7,
         "spanish": "Recuerdo",
         "english": "Souvenir",
-        "img": "https://img.freepik.com/free-photo/store-famous-marrakesh-souk_268835-3995.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/store-famous-marrakesh-souk_268835-3995.avif",
         "audio": "https://www.dropbox.com/scl/fi/u90v42bn2jilj08hg29yp/Souvenir.mp3?rlkey=wu4ekz5uk0bgocncfaiyq9acj&st=xvfq9fk5&dl=1"
       },
       {
         "id": 8,
         "spanish": "Itinerario",
         "english": "Itinerary",
-        "img": "https://img.freepik.com/free-vector/gradient-travel-itinerary-template-design_23-2149650580.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/gradient-travel-itinerary-template-design_23-2149650580.avif",
         "audio": "https://www.dropbox.com/scl/fi/umtka2whbl0fd6beb5tlm/Itenary.mp3?rlkey=o7voj4pvyaapg1rsoxk7qnf52&st=3uvzeb10&dl=1"
       },
       {
         "id": 9,
         "spanish": "Artículos de tocador",
         "english": "Toiletries",
-        "img": "https://img.freepik.com/free-photo/set-hygiene-supplies_23-2147787965.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_hybrid",
+        "img": "styles/images/set-hygiene-supplies_23-2147787965.avif",
         "audio": "https://www.dropbox.com/scl/fi/2qktuwcycr015ndhduofa/toiletries.mp3?rlkey=75n0cb31m3kxuvtd5zhzm016s&st=lu1pk7ie&dl=1"
       },
       {
         "id": 10,
         "spanish": "Paraguas",
         "english": "Umbrella",
-        "img": "https://img.freepik.com/free-vector/umbrella-protection-icon-vector-isolated_24911-109216.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/umbrella-protection-icon-vector-isolated_24911-109216.avif",
         "audio": "https://www.dropbox.com/scl/fi/6gcqvnwzdbt3b24a1wvw3/Umbrella.mp3?rlkey=nrytt8ijm6jg0cfihr2ofpud7&st=t9zpoh1v&dl=1"
       },
       {
         "id": 11,
         "spanish": "Gafas de sol",
         "english": "Sunglasses",
-        "img": "https://img.freepik.com/free-photo/glasses-with-slightly-rounded-frame_23-2150670762.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/glasses-with-slightly-rounded-frame_23-2150670762.jpg",
         "audio": "https://www.dropbox.com/scl/fi/1j6jmy74xpktrpcrvy2dx/sunglasses.mp3?rlkey=ucua2rk0lo8pjshrdjm7emfzn&st=l06hkykc&dl=1"
       }
     ]
@@ -194,61 +194,61 @@
     "elements": [
       {
         "id": 1,
-        "img": "https://img.freepik.com/free-vector/umbrella-protection-icon-vector-isolated_24911-109216.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/umbrella-protection-icon-vector-isolated_24911-109216.avif",
         "choices": ["Paraguas", "Gafas de sol", "Recuerdo"],
         "answer": "Paraguas"
       },
       {
         "id": 2,
-        "img": "https://img.freepik.com/free-photo/store-famous-marrakesh-souk_268835-3995.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/store-famous-marrakesh-souk_268835-3995.avif",
         "choices": ["El Recuerdo", "El Viaje", "La Moneda"],
         "answer": "El Recuerdo"
       },
       {
         "id": 3,
-        "img": "https://img.freepik.com/free-photo/airport-terminal_1417-1461.jpg?t=st=1721671873~exp=1721675473~hmac=85d718bd712b1d3c5f1096236fc982417fe3ffd82d44a8f0eb468d060fe7fb6c&w=826",
+        "img": "styles/images/airport-terminal_1417-1461.avif",
         "choices": ["La Maleta", "El Automático", "El Aeropuerto"],
         "answer": "El Aeropuerto"
       },
       {
         "id": 4,
-        "img": "https://img.freepik.com/free-photo/glasses-with-slightly-rounded-frame_23-2150670762.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/glasses-with-slightly-rounded-frame_23-2150670762.jpg",
         "choices": ["Itinerario", "Gafas de sol", "Artículos de tocador"],
         "answer": "Gafas de sol"
       },
       {
         "id": 5,
-        "img": "https://img.freepik.com/free-photo/vanity-case-products-assortment_23-2149879911.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/set-hygiene-supplies_23-2147787965.avif",
         "choices": ["Recuerdo", "Viaje", "Artículos de tocador"],
         "answer": "Artículos de tocador"
       },
       {
         "id": 6,
-        "img": "https://img.freepik.com/free-photo/place-flying-sunset-sky_1112-1132.jpg?t=st=1721672447~exp=1721676047~hmac=f45688bcb8cfd299cca1ddaa832b63db9bdfacea5420120a88d204923a2c0497&w=900",
+        "img": "styles/images/place-flying-sunset-sky_1112-1132.jpg",
         "choices": ["El Aeropuerto", "El Viaje", "El Avión"],
         "answer": "El Avión"
       },
       {
         "id": 7,
-        "img": "https://img.freepik.com/premium-psd/transparent-background-with-isolated-orange-plastic-suitcase_176841-75050.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/transparent-background-with-isolated-orange-plastic-suitcase_176841-75050.avif",
         "choices": ["La Maleta", "El Puente", "La Mochila"],
         "answer": "La Maleta"
       },
       {
         "id": 8,
-        "img": "https://img.freepik.com/free-vector/foreign-passport-two-airplane-tickets_80328-204.jpg?t=st=1721672531~exp=1721676131~hmac=d63f39636c369ee8cc4fba9e6d423b79a95dee4c3dc96675f36fbdf19cfb89ba&w=740",
+        "img": "styles/images/foreign-passport-two-airplane-tickets_80328-204.avif",
         "choices": ["El Boleto", "El Puente", "El Viaje"],
         "answer": "El Boleto"
       },
       {
         "id": 9,
-        "img": "https://img.freepik.com/free-vector/travel-background-flat-style_23-2147766297.jpg?t=st=1723204491~exp=1723208091~hmac=d7e8bd86e5ad44f22d291de546ff6726a570cf749f8ef452faa6f3411ae5712a&w=740",
+        "img": "styles/images/travel-background-flat-style_23-2147766297.avif",
         "choices": ["La Mochila", "La Playa", "El Viaje"],
         "answer": "El Viaje"
       },
       {
         "id": 10,
-        "img": "https://img.freepik.com/free-psd/realistic-isolated-blue-backpack-transparent-background_125540-3532.jpg?ga=GA1.1.1425892491.1713816127&semt=sph",
+        "img": "styles/images/realistic-isolated-blue-backpack-transparent-background_125540-3532.jpg",
         "choices": ["El Equipaje", "La Mochila", "La Maleta"],
         "answer": "La Mochila"
       }
@@ -265,7 +265,7 @@
         "spanish": "¿Dónde está...?",
         "english": "Where is...?",
         "arabic": "أين هو",
-        "img": "https://img.freepik.com/premium-vector/boy-is-thinking-about-direction-work_118167-6396.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_user",
+        "img": "styles/images/boy-is-thinking-about-direction-work_118167-6396.avif",
         "audio": "https://www.dropbox.com/scl/fi/dn4gdn8pcj5si081pfpxp/D-nde-est.mp3?rlkey=qfkahvgzdcr5afhpmmn3w3kxj&st=uvad6i0g&dl=1"
       },
       {
@@ -273,7 +273,7 @@
         "spanish": "¿Cómo llego a...?",
         "english": "How do I get to...?",
         "arabic": "كيف يمكنني الذهاب إلى...؟",
-        "img": "https://img.freepik.com/premium-photo/man-woman-with-map-street_23-2147654309.jpg?w=826",
+        "img": "styles/images/man-woman-with-map-street_23-2147654309.avif",
         "audio": "https://www.dropbox.com/scl/fi/wy0x2ppuu7jguy8vh52or/C-mo-llego-a.mp3?rlkey=7w957z62d8tz8iudadspkrf1v&st=3g1v46tz&dl=1"
       },
       {
@@ -281,7 +281,7 @@
         "spanish": "¿Cuánto cuesta un taxi a...?",
         "english": "How much is a taxi to...?",
         "arabic": "كم ثمن التاكسي إلى...؟",
-        "img": "https://img.freepik.com/free-photo/smiley-man-city-holding-mobile_23-2148296633.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_user",
+        "img": "styles/images/smiley-man-city-holding-mobile_23-2148296633.avif",
         "audio": "https://www.dropbox.com/scl/fi/dxl3ivb5ckg8pd3ydjkcw/Cu-nto-cuesta-un-taxi-a.mp3?rlkey=95fyhv05vlcqn1snucvck4muc&st=xqhjcvet&dl=1"
       }
     ]
@@ -297,7 +297,7 @@
         "spanish": "<span style=\"color: red; font-weight:bold;\">¿Dónde está </span>el museo más cercano?",
         "english": "<span style=\"color: red; font-weight:bold;\">Where is</span> the nearest museum?",
         "arabic": "أين يقع أقرب متحف؟",
-        "img": "https://img.freepik.com/free-vector/local-tourism-map-with-map_23-2148595227.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_user",
+        "img": "styles/images/local-tourism-map-with-map_23-2148595227.avif",
         "audio": "https://www.dropbox.com/scl/fi/pxo7voirbss5cpxslaofp/D-nde-est-el-museo-m-s-cercano.mp3?rlkey=njcn98jtstwh9iie6sv6wnxzs&st=1dd47k7f&dl=1"
       },
       {
@@ -305,7 +305,7 @@
         "spanish": "¿<span style=\"color: red; font-weight:bold;\">Cómo llego a</span> la estación de tren?",
         "english": "<span style=\"color: red; font-weight:bold;\">How do I get to</span> the train station?",
         "arabic": "كيف يمكنني الوصول إلى محطة القطار؟",
-        "img": "https://img.freepik.com/free-photo/travelers-take-pictures-couples-while-waiting-trains_1150-12441.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_user",
+        "img": "styles/images/travelers-take-pictures-couples-while-waiting-trains_1150-12441.avif",
         "audio": "https://www.dropbox.com/scl/fi/15xbc34coqc4ngjn89csu/C-mo-llego-a-la-estaci-n-de-tren.mp3?rlkey=1zmcj4t83y4p6ravd572zbwzv&st=136n7u22&dl=1"
       },
       {
@@ -313,7 +313,7 @@
         "spanish": "<span style=\"color: red; font-weight:bold;\">Cuánto cuesta</span> un taxi al aeropuerto?",
         "english": "<span style=\"color: red; font-weight:bold;\">How much </span> is a taxi to the airport?",
         "arabic": "كم تكلفة سيارة الأجرة إلى المطار؟",
-        "img": "https://img.freepik.com/premium-vector/taxi-driver-yellow-taxi_165488-2769.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_user",
+        "img": "styles/images/taxi-driver-yellow-taxi_165488-2769.avif",
         "audio": "https://www.dropbox.com/scl/fi/zhgu65hhsuqes3eevh7zo/Cu-nto-cuesta-un-taxi-al-aeropuerto.mp3?rlkey=n7jx7mp676pljs5oruon59cd5&st=1yyoqswy&dl=1"
       },
       {
@@ -321,7 +321,7 @@
         "spanish": "¿<span style=\"color: red; font-weight:bold;\">Hay un</span> autobús que vaya al centro?",
         "english": "<span style=\"color: red; font-weight:bold;\">Is there </span>a bus to the city center?",
         "arabic": "هل هناك حافلة إلى وسط المدينة؟",
-        "img": "https://img.freepik.com/free-vector/urban-bus-bus-stop-with-flat-design_23-2147833954.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_hybrid",
+        "img": "styles/images/urban-bus-bus-stop-with-flat-design_23-2147833954.avif",
         "audio": "https://www.dropbox.com/scl/fi/6imvspe3po43y0upn1tnc/Hay-un-autob-s-que-vaya-al-centro.mp3?rlkey=crdvad4comnu76gq4s5azynyz&st=49o0sgif&dl=1"
       },
       {
@@ -329,7 +329,7 @@
         "spanish": "<span style=\"color: red; font-weight:bold;\">Por favor, tráigame</span> un mapa de la ciudad.",
         "english": "<span style=\"color: red; font-weight:bold;\">Please bring me</span> a city map",
         "arabic": "من فضلك أحضر لي خريطة المدينة",
-        "img": "https://img.freepik.com/free-photo/woman-jeans-jacket-holds-her-hands-touristic-map_8353-1636.jpg?ga=GA1.1.1425892491.1713816127&semt=ais_user",
+        "img": "styles/images/woman-jeans-jacket-holds-her-hands-touristic-map_8353-1636.avif",
         "audio": "https://www.dropbox.com/scl/fi/csb4gz3i3p2nn1xsopk5v/Por-favor-tr-igame-un-mapa-de-la-ciudad.mp3?rlkey=88x1mlcbsfq88vx9o6zysrchr&st=isx085jw&dl=1"
       }
     ]
